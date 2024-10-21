@@ -1,0 +1,354 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+.tasks {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.box {
+    background-color: rgb(255, 255, 255);
+    border: 4px solid teal;
+    border-radius: 16px;
+    padding: 18px;
+    margin: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 44%;
+    /* box-shadow: 2px 2px 8px rgb(15, 161, 161); */
+    box-shadow: 0px 0px 12px -1px rgba(0, 0, 0, 0.685);
+}
+
+h1 {
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.heading {
+    /* margin-bottom: 26pxrem; */
+    text-align: center;
+    margin: 20px;
+    font-size: 2.6rem;
+}
+
+input {
+    font-size: 1.2rem;
+    width: 94%;
+    padding: 6px;
+    border-radius: 6px;
+}
+
+button {
+    font-size: 1rem;
+    padding: 6px;
+    margin-top: 16px;
+    width: 40%;
+    background-color: rgb(1, 158, 158);
+    color: white;
+    font-weight: 600;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+.btn {
+    font-size: 1rem;
+    padding: 6px;
+    margin: 16px 16px 0px 16px;
+    width: 44%;
+    background-color: rgb(1, 158, 158);
+    color: white;
+    font-weight: 600;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+.insert-btn {
+    width: 20%;
+    margin: 16px 10px 0px 10px;
+}
+
+.max-btn {
+    width: 32%;
+    margin: 16px 10px 0px 10px;
+}
+
+.btn-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+button:hover {
+    background-color: rgb(38, 212, 212);
+    /* background-color: ; */
+}
+
+#result {
+    color: rgb(5, 163, 5);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 6px;
+    display: none;
+}
+
+#Wrongresult {
+    color: red;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 6px;
+    display: none;
+}
+
+#m-result {
+    color: rgb(5, 163, 5);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 6px;
+    display: none;
+}
+
+#a-result {
+    color: rgb(5, 163, 5);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 6px;
+    display: none;
+}
+
+#i-result {
+    color: rgb(5, 163, 5);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 6px;
+    display: none;
+}
+
+#s-result {
+    color: rgb(5, 163, 5);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 6px;
+    display: none;
+}
+
+#empty {
+    color: rgb(5, 163, 5);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 6px;
+    display: none;
+}
+
+#s-empty {
+    color: red;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 6px;
+    display: none;
+}
+
+#sort-result {
+    color: rgb(5, 163, 5);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 6px;
+    display: none;
+}
+
+#inserted-result {
+    color: rgb(5, 163, 5);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 6px;
+    display: none;
+}
+
+#input-result {
+    color: rgb(5, 163, 5);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 6px;
+    display: none;
+}
+
+#m-empty {
+    color: rgb(5, 163, 5);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 6px;
+    display: none;
+}
+
+#find-result {
+    color: rgb(5, 163, 5);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 6px;
+    display: none;
+}
+
+#num-empty {
+    color: rgb(5, 163, 5);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 6px;
+    display: none;
+}
+
+#fact-result {
+    color: rgb(5, 163, 5);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 6px;
+    display: none;
+}
+
+#matrix-result {
+    color: rgb(5, 163, 5);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 6px;
+    display: none;
+}
+
+#found-empty {
+    color: rgb(5, 163, 5);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 6px;
+    display: none;
+}
+
+#string-empty {
+    color: rgb(5, 163, 5);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 6px;
+    display: none;
+}
+
+#rotate-result {
+    color: rgb(5, 163, 5);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 6px;
+    display: none;
+}
+
+#swap-result {
+    color: rgb(5, 163, 5);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 6px;
+    display: none;
+}
+
+#text-empty {
+    color: rgb(5, 163, 5);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 6px;
+    display: none;
+}
+
+#search-result {
+    color: rgb(5, 163, 5);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 6px;
+    display: none;
+}
+
+#entered-result {
+    color: rgb(5, 163, 5);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 6px;
+    display: none;
+}
+
+#word-empty {
+    color: rgb(5, 163, 5);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 6px;
+    display: none;
+}
+
+#matrix {
+    /* border: 2px solid black; */
+    /* padding: 10px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    flex-wrap: wrap;
+}
+
+#matrix input {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border: none;
+    background-color: transparent;
+    /* border-bottom: 1px solid black; */
+}
+
+#matrix table {
+    /* margin: 0px 10px; */
+    margin: 0px 0px 0px 14px;
+}
+
+#matrix td {
+    margin: 0px 6px;
+    text-align: center;
+}
+
+.matrix-1 {
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+@media screen and (max-width: 970px) {
+    .btn {
+        /* font-size: 1rem;
+                padding: 6px;
+                margin: 16px 16px 0px 16px; */
+        width: 80%;
+        /* background-color: rgb(1, 158, 158);
+                color: white;
+                font-weight: 600;
+                border: 2px solid black;
+                border-radius: 8px; */
+    }
+
+    .insert-btn {
+        width: 80%;
+        /* margin: 16px 10px 0px 10px; */
+    }
+
+    .max-btn {
+        width: 80%;
+        /* margin: 16px 10px 0px 10px; */
+    }
+
+    .box {
+        width: 80%;
+    }
+}

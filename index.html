@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Tasks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1 class="heading">All Eid JavaScript Tasks</h1>
+
+    <div class="tasks">
+
+        <!-- Leap Year Program -->
+
+        <div class="box">
+            <h1>Leap Year Finder</h1>
+            <input id="year" type="number" placeholder="Enter any Year YYYY">
+            <div id="result">
+
+            </div>
+            <div id="Wrongresult">
+
+            </div>
+            <button class="btn" onclick="leapYear()">
+                Find
+            </button>
+        </div>
+
+        <!-- Multiple of 7 & 14 -->
+
+        <div class="box">
+            <h1>Check Multiple of 7 & 14</h1>
+            <input id="multiple" type="number" placeholder="Enter any Number">
+            <div id="m-result">
+
+            </div>
+            <button class="btn" onclick="multiple()">
+                Check
+            </button>
+        </div>
+
+        <!-- Angle Types -->
+
+        <div class="box">
+            <h1>Find Angle Types</h1>
+            <input id="angle" type="number" placeholder="Enter Angle between 0 - 360 in Degrees°">
+            <div id="a-result">
+            </div>
+            <button class="btn" onclick="angleType()">
+                Find
+            </button>
+        </div>
+
+        <!-- Searching Number -->
+
+        <div class="box">
+            <h1>Insert & Search Any Number</h1>
+            <input id="insert" type="number" placeholder="Enter numbers">
+            <div id="s-result">
+            </div>
+            <div id="empty"></div>
+            <div class="btn-box">
+                <button class="btn" onclick="insertNumber()">
+                    Insert
+                </button>
+                <button class="btn" onclick="searchNumber()">
+                    Search
+                </button>
+            </div>
+            <div id="i-result">
+            </div>
+        </div>
+
+        <!-- Sorting 100 Intigers -->
+
+        <div class="box">
+            <h1>Sort 100 Intigers</h1>
+            <input id="sort-insert" type="text" placeholder="Enter maximum 100 Intigers Separated by Space( )">
+            <div id="sort-result">
+            </div>
+            <div id="s-empty"></div>
+            <div class="btn-box">
+                <button class="btn" onclick="insertIntigers()">
+                    Insert
+                </button>
+                <button class="btn" onclick="sortIntigers()">
+                    Sort
+                </button>
+            </div>
+            <div id="inserted-result">
+            </div>
+        </div>
+
+        <!-- Finding Maximum and Minimum Numbers -->
+
+        <div class="box">
+            <h1>Find Maximum & Minimum Number</h1>
+            <input id="max-insert" type="text" placeholder="Enter Intigers Separated by Space( )">
+            <div id="find-result">
+            </div>
+            <div id="m-empty"></div>
+            <div class="btn-box">
+                <button class="btn insert-btn" onclick="inputValues()">
+                    Insert
+                </button>
+                <button class="btn max-btn" onclick="maxNumber()">
+                    Find Maximum
+                </button>
+                <button class="btn max-btn" onclick="minNumber()">
+                    Find Minimum
+                </button>
+            </div>
+            <div id="input-result">
+            </div>
+        </div>
+
+        <!-- Diagonal Matrix Finder -->
+
+        <div class="box">
+            <h1>Find Diagonal Matrix</h1>
+            <h3>Enter values in following matrix...</h3>
+            <div class="matrix-1" id="matrix">
+                <table>
+                    <tr>
+                        <td>
+                            <input placeholder="?" type="number" id="r00">
+                        </td>
+                        <td>
+                            <input placeholder="?" type="number" id="r01">
+                        </td>
+                        <td>
+                            <input placeholder="?" type="number" id="r02">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input placeholder="?" type="number" id="r10">
+                        </td>
+                        <td>
+                            <input placeholder="?" type="number" id="r11">
+                        </td>
+                        <td>
+                            <input placeholder="?" type="number" id="r12">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input placeholder="?" type="number" id="r20">
+                        </td>
+                        <td>
+                            <input placeholder="?" type="number" id="r21">
+                        </td>
+                        <td>
+                            <input placeholder="?" type="number" id="r22">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div id="found-empty"></div>
+            <button class="btn" onclick="findDiagonal()">
+                Find
+            </button>
+            <div id="matrix-result">
+            </div>
+        </div>
+
+        <!-- Factorialize given number -->
+
+        <div class="box">
+            <h1>Find Factorial ! of any Number</h1>
+            <input id="fact-num" type="number" placeholder="Enter any number">
+            <div id="fact-result">
+
+            </div>
+            <div id="num-empty"></div>
+            <button class="btn insert-btn" onclick="factorialize()">
+                Factorialize !
+            </button>
+        </div>
+
+        <!-- String Rotation -->
+
+        <div class="box">
+            <h1>Rotate any String</h1>
+            <input id="string-text" type="text" placeholder="Enter text to rotate">
+            <div id="rotate-result">
+
+            </div>
+            <div id="string-empty"></div>
+            <button class="btn" onclick="rotateString()">
+                Rotate
+            </button>
+        </div>
+
+
+        <!-- 1st and Last index Swap -->
+
+        <div class="box">
+            <h1>Swaping 1st Index to Last Index </h1>
+            <input id="swap-text" type="text" placeholder="Enter text to swap">
+            <div id="swap-result">
+
+            </div>
+            <div id="text-empty"></div>
+            <button class="btn" onclick="swapStrting()">
+                Swap Now
+            </button>
+        </div>
+
+        <!-- Insert Text and search any word -->
+
+        <div class="box">
+            <h1>Insert Text and search any word</h1>
+            <input id="enter-text" type="text" placeholder="Enter text">
+            <div id="search-result">
+
+            </div>
+            <div id="word-empty"></div>
+            <div class="btn-box">
+                <button class="btn" onclick="inserttext()">
+                    Insert
+                </button>
+                <button class="btn" onclick="searchWord()">
+                    Search
+                </button>
+            </div>
+            <div id="entered-result">
+
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
